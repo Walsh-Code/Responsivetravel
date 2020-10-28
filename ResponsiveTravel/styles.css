@@ -1,0 +1,94 @@
+/* Author: Gillette Walsh
+    Date: 10/27/2020
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: gray;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: blue;
+  padding-top: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  font-size: 1.25em;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border: 1px black solid;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  opacity: 90%;
+}
+
+img {
+  width: 100%;
+  height: 400px;
+}
+
+p {
+  font-size: 1.25em;
+  background-color: gray;
+}
+
+@media only screen and (min-width: 568px) {
+  nav {
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+
+  .tab1 {
+    order: 1;
+    width: 50%;
+  }
+
+  .tab3 {
+    order: 2;
+    width: 49%;
+  }
+
+  .tab2 {
+    order: 3;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 786px) {
+  nav {
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+
+  .tab1 {
+    order: 1;
+  }
+
+  .tab3 {
+    order: 3;
+  }
+
+  .tab2 {
+    order: 2;
+  }
+}
